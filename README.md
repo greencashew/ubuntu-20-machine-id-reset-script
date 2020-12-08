@@ -23,11 +23,16 @@ cat /etc/machine-id
 
 ### Script
 
-1. Enter **Ubuntu VM** to be cloned
-1. Download script `reset-machine-id.sh`
+1. Enter source **Ubuntu VM**
+1. Download script and make it executable
+
+```bash
+wget https://raw.githubusercontent.com/greencashew/ubuntu-20-machine-id-reset-script/main/reset-machine-id.sh && chmod +x reset-machine-id.sh
+```
+
 1. Run `sudo ./reset-machine-id.sh install`
-1. Clone your prime virtual machine
-1. Start your virtual machines
+1. Clone source virtual machine
+1. Start cloned virtual machines
 1. Machine id-s for each VM should be different.
 
 #### Usage in details
